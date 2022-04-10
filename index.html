@@ -1,39 +1,143 @@
-<!-- This is an html page for the 12:30 section of JNL221.
-This page will be used at times for explaining homework instructions
-or displaying student work. -->
+<!-- Complete this worksheet in html and css. Instructions are as comments; you may use reference_sheet.html and the internet to jog your memory on html tags and css. -->
+<!-- You may work with a partner on this. -->
 
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>Foundations Of Data And Digital Journalism</title>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
-	<link type="text/css" rel="stylesheet" href="../index.css" />
-</head>
+    <head>
+        <meta charset="utf-8">
+        <title>Basic HTML</title>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        
+        <style>
+        
+        p {
+            color: darkgray;
+            font-size: 16px;
+            font-family: 'Open Sans', serif;
+            width: 50%;
+        }
 
-<!-- DO NOT EDIT ANYTHING IN THE HEAD TAG ^ -->
+        #bargraph {
+            border: 1px solid gray;
+            padding-left: 10px;
+            padding-bottom: 10px;
+            width: 25%;
+        }
+        .bar_label {
+            color: red;
+        }
+        #longest {
+            width: 300px;
+            height: 10px;
+            background: gray;
+            border: 1px darkred;
+        }
+        #longer {
+            width: 200px;
+            height: 7px;
+            background: gray;
+            border: 1px darkred;
+        }
+        #long {
+            width: 100px;
+            height: 4px;
+            background: gray;
+            border: 1px darkred;
 
-<body>
-	
-	<!-- Intro row -->
-	<div id="intro" class="col-sm-12">
-		<h1> <!-- /// EDITABLE ONE /// --> JNL 221, Spring 2022</h1>
-		<h4> <!-- /// EDITABLE TWO /// --> Josh Feldstein</h4>
-	</div>
+        }
 
-	<div class="container content">
-		<p> <!-- /// EDITABLE THREE /// --> I am from Pittsburgh, PA.</p>
-	</div>
+        </style>
+    </head>
+    
+    <body>
+
+    <h1>A little bit about me!</h1>
+    
+    <h2>My intro</h2>
+    <!-- Include: a brief intro to yourself -- where you're from, what you like to do for fun, what you're studying, and who your community or family is. -->
+    <!-- Tags to use: <p>, <strong>, <i> -->
+        <p> I'm <strong>Josh Feldstein</strong>, a magazine, news and digital journalism major from <i>Pittsburgh, Pennsylvania</i>. Most of my family lives in Pittsburgh, but I also have family in Philadelphia, Tampa, Milwaukee and many other cities across the United States. </p>
+    
+
+    <h2>My handles</h2>
+    <!-- Include: at least two handles for your social media accounts -->
+    <!-- Tags to use: <p>, <a> -->
+        <p> Instagram: <i>@josh_feldstein</i>
+        <p> Twitter: <i> @josh_feldstein10 </i>
+
+    
+    <h2> ~ Challenge: Why is my text maroon? ~</h2>
+    <!-- Challenge! The text in your p tags is currently maroon. Figure out why and make it dark gray, using a hex code. (Hint: use google to find a hex code for a dark gray) -->
+    <p> #a9a9a9 </p>
 
 
-  	<!-- About Row -->
-	<div class="row">
-		<div id="end" class="col-sm-12">
-			<h4> <!-- /// EDITABLE FOUR /// --> made by github pages with montserrat and open sans, at newhouse school of communications. </h4>
-		</div>
-	</div>
+    <h2>My favorite meme</h2>
+    <!-- Include: a screenshot of an internet meme that you like -->
+    <!-- Tags to use: <img> -->
+    <!-- Hint! Use 'reference_sheet.html', which you downloaded with this file, to remember how to include an image. -->
+    <img src= "https://i.kym-cdn.com/entries/icons/original/000/034/065/terio.jpg" alt="Popeye's Kid Meme" height="300px" width="400px">
 
-</body>
+    
+    <h2>Why I'm a great student</h2>
+    <!-- Include: an unordered list -->
+    <!-- Tags to use: <ul>, <li>, <strong> --> 
+    <ul>
+
+        <li> Studious </li>
+        <li> Determined </li>
+        <li> Creative </li>
+        <li> Hard-Working </li>
+
+
+    
+    <h2>Top 3 most famous people that went to my high school</h2>
+    <!-- Include: an ordered list -->
+    <!-- Tags to use: <ol>, <li>, <a> -->
+    <ol>
+
+        <li> Mark Cuban - Owner of the Dallas Mavericks </li>
+        <li> Joe Manganiello - Actor/Comedian </li>
+        <li> Ian Happ - Outfielder for the Chicago Cubs </li>
+
+
+    <h2> ~ Challenge: Read my poetry ~</h2>
+    <!-- Challenge! Figure out what a <br> tag is. Write a short poem about your college experience so far, using only one <p> tag and at least two <br> tags. -->
+        <p> Passing my classes <br>
+            Hanging out with my friend group<br>
+            Lots of cold weather </p>
+
+
+
+    
+    <h2>This is one of my favorite quotes</h2>
+    <!-- Include: a quote from a book -- quote should be in italics and gray, title of source should be in an <h3> tag -->
+    <!-- Tags to use: <h3>, <p> with an id named 'quote' that is styled in the <style> section -->
+        <p> “The difference between a successful person and others is not a lack of strength, not a lack of knowledge, but rather a lack of will.” – Vince Lombardi </p>
+
+
+    <h2>These are more of my favorite TV shows</h2>
+    <!-- Include: an unordered list of at least three books, list items should have a border -->
+    <!-- Tags to use: <ul>, <li> with classes named 'book' that is styled in the <style> section -->
+    <ul>
+
+        <li> Atlanta </li>
+        <li> It's Always Sunny in Philadelphia </li>
+        <li> Arrested Development </li>
+
+
+
+    <h3>~ Challenge: A very simple bar graph ~</h3>
+    <!-- Challenge! Add CSS styles to '#longer' and '#long' to make the bar graph look like it's ordered from longest to shortest. You may also change the h4 text and the p text to make this simple bar chart reflect real (or fake) data. -->
+
+    <div id="bargraph">
+        <h4>Length of bars</h4>
+        <p class="bar_label">Longest</p>
+        <div id="longest"></div>
+        <p class="bar_label">Longer</p>
+        <div id="longer"></div>
+        <p class="bar_label">Long</p>
+        <div id="long"></div>
+    </div>
+     
+    </body>
 </html>
